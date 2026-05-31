@@ -31,6 +31,14 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Ground Station',
+          autogenerate: { directory: 'ground-station' },
+        },
+        {
+          label: 'Vehicle',
+          autogenerate: { directory: 'vehicle' },
+        },
+        {
           label: 'Components',
           autogenerate: { directory: 'components' },
         },

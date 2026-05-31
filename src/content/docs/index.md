@@ -15,6 +15,30 @@ Each of the projects will have project-specific notes, but we wanted a place to 
 | [Isolation Setup](isolation.md) | Galvanic isolation strategy for the ground station and vehicle. |
 | [Valve FSM](fsm.md) | Finite-state-machine design for the valve driver. |
 
+## Modules
+
+The DPF instrumentation is split into ground-station and vehicle modules. Each board gets its own page.
+
+### Ground Station
+
+| Board | Role |
+|-------|------|
+| [Valve Driver (1A)](ground-station/valve-driver.md) | Drives the engine's solenoid valves. |
+| [Thermocouple DAQ (2A)](ground-station/thermocouples-2a.md) | Thermocouple temperatures across the engine/propellant system. |
+| [Load Cell DAQ (1A)](ground-station/load-cells.md) | Bridge-type load cells (thrust, weight). |
+| [Pressure Transducer DAQ (1B)](ground-station/pressure-transducers-1b.md) | Pressure transducers across the propellant/pressurant system. |
+| [Injector Accelerometer (1A)](ground-station/injector-accelerometer.md) | Engine vibration / shock (WIP). |
+| [Thermocouple Board (1A)](ground-station/thermocouples-1a.md) | Original ALI thermocouple board (in service). |
+| [Thermocouple Board (1B)](ground-station/thermocouples-1b.md) | Archived revision (never built). |
+| [Pressure Transducer DAQ (1A)](ground-station/pressure-transducers-1a.md) | Early 4-PT design (superseded). |
+
+### Vehicle
+
+| Board | Role |
+|-------|------|
+| [Flight Computer / GPS (1A)](vehicle/flight-computer-gps.md) | Flight computer with GPS for tracking. |
+| [Chickenstick Locator (1A)](vehicle/chickenstick-locator.md) | LoRa locator for recovery (prototype). |
+
 ## Components
 
 Each major component gets its own page covering why we picked it and links to its datasheets.
